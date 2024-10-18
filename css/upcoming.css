@@ -1,0 +1,175 @@
+.vector {
+    position: relative;
+    display: inline-block;
+}
+
+.vector img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.upcoming {
+    position: absolute;
+    top: 196.5px;
+    left: 152.5px;
+}
+
+.upcoming h2 {
+    font-size: 40px;
+    color: #e60020;
+    font-family: "Poppins", sans-serif;
+    width: 656px;
+    height: 98px;
+}
+
+.upcoming p {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    width: 451px;
+    height: 108px;
+    margin-top: 26px;
+}
+
+.upcomingcontainer1, .upcomingcontainer2, .upcomingcontainer3 {
+    padding-bottom: 27px;
+}
+
+
+.upcomingcontainer1 h2 {
+    margin-left: 73px;
+    color: #e60020;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 240px;
+    height: 240px;
+}
+
+.upcomingcontainer2 h2 {
+    margin-left: 73px;
+    color: #e60020;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.upcomingcontainer3 h2 {
+    margin-left: 73px;
+    color: #e60020;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+    .upcoming {
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+
+    .upcoming h2, .upcoming p {
+        width: 100%;
+        height: 98px;
+        text-align: center;
+    }
+
+    .upcoming h2 {
+        width: 100%;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .upcoming p {
+        font-size: 10px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .vector {
+        margin-top: 70px;
+    }
+
+    .image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .imgcontainer {
+        justify-content: space-evenly;
+    }
+
+    .upcomingcontainer1 h2, .upcomingcontainer2 h2, .upcomingcontainer3 h2 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .upcoming {
+        width: 100%;
+    }
+
+    .upcoming h2 {
+        font-size: 40px;
+        width: 90%;
+        height: 98px;
+    }
+    
+    .upcoming p {
+        font-size: 24px;
+        width: 100%;
+        height: 108px;
+        margin-top: 26px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .upcoming {
+        position: absolute;
+        top: 156.5px;
+        left: 152.5px;
+    }
+    
+    .upcoming h2 {
+        font-size: 40px;
+        width: 656px;
+        height: 98px;
+        text-align: left;
+    }
+    
+    .upcoming p {
+        font-size: 24px;
+        width: 451px;
+        height: 108px;
+        margin-top: 26px;
+        text-align: left;
+    }
+
+    .image {
+        width: 240px;
+        height: 240px;
+    }
+
+    .imgcontainer {
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+}

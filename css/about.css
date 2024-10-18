@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ntmy {
+    width: 364px;
+    height: 49px;
+}
+
+.ntmyc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 500px;
+    margin-top: 112px;
+}
+
+.ntmy h3 {
+    color: #e60020;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ntmy p {
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 451px;
+    height: 286px;
+}
+
+.ntmy img {
+    right: 106;
+}
+
+.archive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.archive a {
+    text-decoration: none;
+    color: #e60020;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+    .ntmyc {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img{
+        width: 80%;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .ntmy {
+        height: 300px;
+        right: auto;
+        left: auto;
+    }
+
+    .ntmy p{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .ntmy h3 {
+        font-size: 30px;
+    }
+
+    .archive {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .archive h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .ntmy {
+        width: 600px;
+        height: 200px;
+    }
+
+    .ntmyc {
+        margin-top: 100px;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ntmyc {
+        flex-direction: row;
+        height: 600px;
+        padding-bottom: 100px;
+    }
+
+    .ntmy h3 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .ntmy p {
+        font-size: 20px;
+    }
+
+    .img{
+        width: 40%;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+    .ntmy {
+        width: 500px;
+        height: 300px;
+    }
+
+    .archive {
+        padding-bottom: 60px;
+    }
+
+}

@@ -1,0 +1,308 @@
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* slideshow css */
+.mySlides img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    margin-top: 100px;
+    
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: #bbb 0.6s ease;
+    top: 10;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    
+}
+
+/* Gallery Style */
+.featuredc {
+    width: 100vw;
+    height: 49px;
+}
+
+.featuredc h1 {
+    color: #E60020;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.fcontainer {
+    display: flex;
+    width: 820px;
+    max-width: 1500px;
+    height: 231px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    transition: all 400ms;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    background-color: #fdd4d1;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.card div h5 {
+    text-align: center;
+    opacity: 0;
+    transition: 1000ms ease;
+}
+
+
+.card div img:hover + h5{
+    opacity: 1;    
+}
+
+.card div img {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 0;
+    opacity: 1;
+    transition: 800ms ease;
+}
+
+
+.card div img:hover{
+    margin: auto;
+    scale: 0.8;
+    height: 10rem;
+    width: 10rem;
+    transition: 800ms ease;
+}
+
+
+
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #E60020;
+}
+
+.main-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.button-store {
+    border-radius: 10px;
+    background: #e60020;
+    width: 543px;
+    height: 113px;
+    float: right;
+}
+
+.to-shop a {
+    color: #000;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.to-shop a:hover {
+    color: white;
+}
+
+.upcoming {
+    float: right;
+}
+
+.upcoming h2 {
+    color: #e60020;
+    font-size: 40px;
+}
+
+.upcoming h3 {
+    color: #e60020;
+    font-size: 25px;
+}
+
+.upcoming li {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.collaborations {
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    display: flex;
+}
+
+.new-arrivals {
+    display: grid;
+    grid-template-columns: repeat(5, 240px);
+    grid-template-rows: repeat(2, 240px);
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.new-arrivals div img {
+    width: 100%;
+}
+
+/* Responsive Design: Mobile */
+@media screen and (min-width: 320px) {
+    .tablet-desktop, .desktop {
+        display: none;
+    }
+}
+/* Responsive Design: Tablet */
+@media screen and (min-width: 600px){
+    .tablet-desktop {
+        display: block;
+    }
+
+    .main-content, .button-store, .gray-button {
+        display: none;
+    }
+
+    .featuredc {
+        height: 31.85rem;
+        width: 100vw;
+    }
+
+    .fcontainer {
+        width: 27.85rem;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .collaborations h1{
+        text-align: center;
+        color: #E60020;
+    }
+
+    .collaborations div {
+        width: 100vw;
+        height: 9.125rem;
+        background: rgba(217, 217, 217, 0.50);
+    }
+
+    .collaborations div img {
+        width: 90%;
+        height: 90%;
+        margin: .45rem 2rem;
+    }
+}
+
+/* Resposinve Design: Desktop */
+@media (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    .fcontainer {
+        width: 41.85rem;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .feat-vid iframe {
+        margin: auto;
+    }
+    .feat-vid {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featuredc {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .featuredc h1 {
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    .fvp {
+        display: flex;
+    }
+
+    .collaborations div {
+        width: 100vw;
+        height: 12.5rem;
+    }
+    .desktop {
+        display: block;
+    }
+    .main-content {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #E60020;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
